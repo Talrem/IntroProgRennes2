@@ -32,7 +32,6 @@ function rave(){
   }
   //alert(hexCode);
   document.body.style.backgroundColor = hexCode;
-  console.log(hexCode);
   for(let button of buttonCollection){
     hexCode="#";
     for(i=0; i<6;i++){
