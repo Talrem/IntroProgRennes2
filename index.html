@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8"/>
     <title>Intro Prog</title>
+    <!--Je change le logo de l'onglet-->
     <link rel="icon" type="image/x-icon" href="https://www.vips2.fr/wp-content/uploads/2017/04/logoRennes2-Noir.png">
+    <!--Ici je fais le lien entre la page web, et la feuille de style (Cascading Style Sheet, CSS)-->
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <!--Back End-->
+    <!--Back End, ici on déclare quels scripts vont être utilisés par la page web.-->
     <!--Les Scripts de structure-->
     <script src="scripts/cm1.js"></script>
     <script src="scripts/prenom.js"></script>
@@ -20,6 +22,7 @@
     <script src="scripts/cinema.js"></script>
     <script src="scripts/langue.js"></script>
     <script src="scripts/sport.js"></script>
+    <script src="scripts/licence.js"></script>
     <!--Les Scripts d'itérations-->
     <script src="scripts/decompte.js"></script>
     <script src="scripts/supavingt.js"></script>
@@ -29,13 +32,18 @@
     <script src="scripts/sommeFor.js"></script>
     <!--Les Scripts pas sérieux-->
     <script src="scripts/rave.js"></script>
-    <script src="scripts/lengua.js"></script>
     <script src="scripts/resetColor.js"></script>
-    <!--Front End-->
+    <!--Front End, ici on écrit la page web, ce que verra l'utilisateur dans son navigateur-->
     <div class="center">
       <h1>Les programmes du cours</h1>
       <h2>Conditions</h2>
-      <script src="scripts/licence.js"></script>
+      <!--Ici, je met des boutons. un bouton est une balise qui peut prendre différents attributs. Ceux qui m'intéressent ici sont
+        onclick="nomDUneFonctionQuiSeTrouveDansUnDesScriptsDéclarésPlusTôt()"
+        class="leNomDUneClasseQuiVaEtreUtiliséeParLeCSS"
+        Une fois qu'on a fini le <button>, il faut le fermer avec </button>. Ce qui se trouve entre <button> et </button> sera le texte qui est affiché dessus. Ca peut très bien rester vide
+        Grâce à onclick, je peux mettre tous mes scripts dans la même page sans avoir à refaire un fichier html à chaque fois.
+        Les scripts sont juste exécutés lors d'un click. Cependant, si script était appelé hors d'un bouton, il serait exécuté au chargement de la page.
+      -->
       <button class="scriptButton" type="button" onclick="cm1()">alert</button>
       <button class="scriptButton" type="button" onclick="prenom()">prenom</button>
       <button class="scriptButton" type="button" onclick="age()">age</button>
@@ -58,12 +66,10 @@
       <button class="scriptButton" type="button" onclick="plusoumoins()">plusoumoins While</button>
       <button class="scriptButton" type="button" onclick="sommeFor()">somme For</button>
       <button class="scriptButton" type="button" onclick="plusoumoinsFor()">plusoumoins For</button>
-
     </div>
     <br>
     <div class="center" id="pasSerieux">
       <h2>Pas sérieux tout ça</h2>
-      <button class="scriptButton" type="button" onclick="lengua()">lengua</button>
       <button class="scriptButton" type="button" onclick="rave()">rave</button>
       <button class="scriptButton" type="button" onclick="resetColor()">reset couleur</button>
     </div>
