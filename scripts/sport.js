@@ -1,7 +1,9 @@
 function sport(){
   var annee = prompt("Quel est votre année de naissance ?", "2000");
+  //Comme nombre d'entre vous l'ont fait remarquer à la prof, ce n'est pas très précis d'utiliser 2024 dans le code
+  //mais j'ai la flemme d'implémenter plus pour ce programme. J'ai plus fait joujou avec le format de date dans le fichier age.js
   var age = 2024-annee;
-
+  //Ici, on fait juste des if(){}else{} pour vérifier que l'âge est le bon. Avec un mélange de OU logiques et de ET logiques
   if(age == 10 || age == 11){
     alert("Poussin");
   }else if(age == 12 || age == 13){
