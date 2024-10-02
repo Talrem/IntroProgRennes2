@@ -3,8 +3,9 @@ function sommeFor(){
   var n=0;
   //i est un compteur
   var i;
-  //On déclare que i = 0 pour la première boucle. On dit que la boucle continue tant que i < 10. On dit que i est incrémenté de 1 à chaque boucle.
-  for(i = 0; i<10;i++){
+  var j = parseInt(prompt("De combien de nombres voulez vous faire la somme ? :"));
+  //On déclare que i = 0 pour la première boucle. On dit que la boucle continue tant que i < j. On dit que i est incrémenté de 1 à chaque boucle.
+  for( i = 0 ; i<j ; i++ ){
     //on utilise l'opérateur += pour modifier la valeur de n avec l'input de l'utilisateur.
     n+=parseInt(prompt("Entrez votre nombre : "));
   }

@@ -11,7 +11,7 @@ function plusoumoins(){
     }else if(guess > nombre){
       alert("C'est moins.");
     }
-    //On compte les essais (c'était optionnel je crois, mais ça ne coûte pas grand chose)
+    //On compte les essais
     //il y a plusieurs manières de changer la valeur d'un entier.
     /*
       On peut utiliser essais = essais + x; avec x qui vaudrait n'importe quel nombre
