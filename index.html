@@ -25,10 +25,12 @@
     <script src="scripts/licence.js"></script>
     <!--Les Scripts d'itérations-->
     <script src="scripts/decompte.js"></script>
+    <script src="scripts/decompteFor.js"></script>
     <script src="scripts/supavingt.js"></script>
     <script src="scripts/password.js"></script>
     <script src="scripts/plusoumoins.js"></script>
     <script src="scripts/plusoumoinsFor.js"></script>
+    <script src="scripts/messageFor.js"></script>
     <script src="scripts/sommeFor.js"></script>
     <!--Les Scripts pas sérieux-->
     <script src="scripts/rave.js"></script>
@@ -44,32 +46,33 @@
         Grâce à onclick, je peux mettre tous mes scripts dans la même page sans avoir à refaire un fichier html à chaque fois.
         Les scripts sont juste exécutés lors d'un click. Cependant, si script était appelé hors d'un bouton, il serait exécuté au chargement de la page.
       -->
+      <h3>Algo 1</h3>
       <button class="scriptButton" type="button" onclick="cm1()">alert</button>
-      <button class="scriptButton" type="button" onclick="conversion()">conversion</button>
-      <button class="scriptButton" type="button" onclick="prenom()">prenom</button>
-      <button class="scriptButton" type="button" onclick="somme()">somme</button>
-      <button class="scriptButton" type="button" onclick="ttc()">ttc</button>
-    </div>
+      <br>
+      <h3>Algo 2</h3>
+      <button class="scriptButton" type="button" onclick="prenom()">Premier programme : prenom</button>
+      <button class="scriptButton" type="button" onclick="age()">Exo 1 : age</button>
+      <button class="scriptButton" type="button" onclick="somme()">Exo 2 : somme</button>
+      <button class="scriptButton" type="button" onclick="ttc()">Exo 3 : ttc</button>
+      <button class="scriptButton" type="button" onclick="conversion()">Exo 4 : conversion</button>
     <br>
-    <div>
-      <h2>Conditions</h2>
-      <button class="scriptButton" type="button" onclick="age()">age</button>
-      <button class="scriptButton" type="button" onclick="bonjour()">bonjour</button>
+      <h2>Algo 3</h2>
       <button class="scriptButton" type="button" onclick="display()">display</button>
-      <button class="scriptButton" type="button" onclick="cinema()">cinema</button>
-      <button class="scriptButton" type="button" onclick="langue()">langue</button>
-      <button class="scriptButton" type="button" onclick="sport()">sport</button>
-      <button class="scriptButton" type="button" onclick="licence()">licence</button>
-    </div>
+      <button class="scriptButton" type="button" onclick="bonjour()">Exo 1.1 : bonjour</button>
+      <button class="scriptButton" type="button" onclick="cinema()">Exo 2 : cinema</button>
+      <button class="scriptButton" type="button" onclick="langue()">Exo 2 : langue</button>
+      <button class="scriptButton" type="button" onclick="sport()">Exo 3 : sport</button>
+      <button class="scriptButton" type="button" onclick="licence()">validation licence</button>
     <br>
-    <div class="center">
-      <h2>Structures itératives</h2>
-      <button class="scriptButton" type="button" onclick="decompte()">décompte</button>
-      <button class="scriptButton" type="button" onclick="supavingt()">N>20</button>
-      <button class="scriptButton" type="button" onclick="password()">password</button>
-      <button class="scriptButton" type="button" onclick="plusoumoins()">plusoumoins While</button>
-      <button class="scriptButton" type="button" onclick="sommeFor()">somme For</button>
-      <button class="scriptButton" type="button" onclick="plusoumoinsFor()">plusoumoins For</button>
+      <h2>Algo 4</h2>
+      <button class="scriptButton" type="button" onclick="decompte()">Exo 1 : décompte (While)</button>
+      <button class="scriptButton" type="button" onclick="supavingt()">Exo 2 : N>20 (While)</button>
+      <button class="scriptButton" type="button" onclick="password()">Exo 3 : password (While)</button>
+      <button class="scriptButton" type="button" onclick="plusoumoins()">Plus ou Moins (While)</button>
+      <button class="scriptButton" type="button" onclick="messageFor()">Exo 1 : message For</button>
+      <button class="scriptButton" type="button" onclick="decompteFor()">Exo 2 : décompte (For)</button>
+      <button class="scriptButton" type="button" onclick="sommeFor()">Exo 3 : somme For</button>
+      <button class="scriptButton" type="button" onclick="plusoumoinsFor()">Exo 4 : Plus ou Moins (For)</button>
     </div>
     <br>
     <div class="center" id="pasSerieux">
