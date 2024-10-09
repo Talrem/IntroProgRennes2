@@ -35,11 +35,10 @@ function cesarCypher(){
   var messageCode = "";
   var key = parseInt(prompt("Quelle est votre clé de déplacement ? "));
   var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-  var messageArray = Array.from(message);
   var cNumber = 0;
-  for(i = 0; i < messageArray.length; i++){
-    if(getAlphaNumber(messageArray[i])!=-1){
-      cNumber = getAlphaNumber(messageArray[i]) + key;
+  for(i = 0; i < message.length; i++){
+    if(getAlphaNumber(message[i])!=-1){
+      cNumber = getAlphaNumber(message[i]) + key;
       //On sort du tableau par en dessous.
       if(cNumber < 0){
         //Donc on doit remonter
@@ -48,7 +47,7 @@ function cesarCypher(){
       messageCode += alphabet[(cNumber%26)]; //l'opérateur % (modulo) permet d'avoir le reste d'une division euclidienne.
     }else{
       //Le charactère n'a pas été reconnu, donc on remet le même.
-      messageCode += messageArray[i];
+      messageCode += message[i];
     }
   }
   alert(messageCode);
